@@ -86,27 +86,130 @@
         <div class="col-md-8 col-lg-9 col-xl-9 col-xxl-9">
           <div class="col-right">
 
-            <!-- Title -->
-            <div class="online-store">
+            <div class="order">
               <div class="row">
                 <div class="col-12">
-                  <h1 class="title fix-mb-title">Danh sách đồ ăn</h1>
+                  <h1 class="title fix-mb-title">Đặt mỳ</h1>
                 </div>
               </div>
-              <!-- List food -->
-              <div class="row" id="food">
-
+              <!-- Order -->
+              <form class="row panel-form mx-0 m-mb-16" id="order-form">
+                <input type="hidden" name="time" id="time" />
+                <input type="hidden" name="totalPrice" id="totalPrice" />
+                <div class="col-12 col-md-12 col-lg-5 m-mb-12 m-mt-8">
+                  <img class="preview-img" width="100%" src="assets/images/food/noodle.jpg" />
+                </div>
+                <div class="col-12 col-md-12 col-lg-7">
+                  <div class="row">
+                    <div class="form-group col-12 col-md-6">
+                      <fieldset class="bg-dark-ui">
+                        <legend>Loại mỳ</legend>
+                        <select class="form-control form-select" name="noodle" id="noodle">
+                          <option value="Hảo hảo" selected="selected">Hảo hảo</option>
+                          <option value="Omachi gà nấm">Omachi gà nấm</option>
+                          <option value="Omachi bò hầm">Omachi bò hầm</option>
+                          <option value="Omachi hải sản">Omachi hải sản</option>
+                        </select>
+                      </fieldset>
+                    </div>
+                    <div class="form-group col-12 col-md-6">
+                      <fieldset class="bg-dark-ui">
+                        <legend>Xúc xích</legend>
+                        <select class="form-control form-select" name="sausage" id="sausage">
+                          <option value="Không" selected="selected">Không</option>
+                          <option value="1 cái">1 cái</option>
+                          <option value="2 cái">2 cái</option>
+                          <option value="3 cái">3 cái</option>
+                        </select>
+                      </fieldset>
+                    </div>
+                    <div class="form-group col-12 col-md-6">
+                      <fieldset class="bg-dark-ui">
+                        <legend>Bò khô</legend>
+                        <select class="form-control form-select" name="dried-beef" id="dried-beef">
+                          <option value="Không" selected="selected">Không</option>
+                          <option value="Có">Có</option>
+                          <option value="Có - nhiều">Có - nhiều</option>
+                        </select>
+                      </fieldset>
+                    </div>
+                    <div class="form-group col-12 col-md-6">
+                      <fieldset class="bg-dark-ui">
+                        <legend>Trứng chiên - ốp</legend>
+                        <select class="form-control form-select" name="egg" id="egg">
+                          <option value="Không" selected="selected">Không</option>
+                          <option value="1 quả">1 quả</option>
+                          <option value="2 quả">2 quả</option>
+                          <option value="3 quả">3 quả</option>
+                        </select>
+                      </fieldset>
+                    </div>
+                    <div class="form-group col-12 col-md-6">
+                      <fieldset class="bg-dark-ui">
+                        <legend>Giá</legend>
+                        <select class="form-control form-select" name="bean-sprouts" id="bean-sprouts">
+                          <option value="Không">Không</option>
+                          <option value="Có" selected="selected">Có</option>
+                        </select>
+                      </fieldset>
+                    </div>
+                    <div class="form-group col-12 col-md-6">
+                      <fieldset class="bg-dark-ui">
+                        <legend>Rau</legend>
+                        <select class="form-control form-select" name="vegetable" id="vegetable">
+                          <option value="Không">Không</option>
+                          <option value="Có" selected="selected">Có</option>
+                        </select>
+                      </fieldset>
+                    </div>
+                    <div class="form-group col-md-12">
+                      <fieldset>
+                        <legend>Ghi chú</legend>
+                        <textarea class="form-control" rows="2" name="note" id="note"></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="form-text mt-0">– Cửa hàng không pha sẵn nước nóng vào mỳ.</div>
+                    <div class="form-text mt-0 mb-2">– Mỳ có sẵn hành lá, khách hàng nào không ăn hành vui lòng ghi chú lại.</div>
+                    <div class="col-md-12 text-end mt-2 m-mb-12">
+                      <button class="btn btn-md btn-secondary" type="submit" id="submit-form">
+                        <i class="fas fa-check text-success"></i>Đặt hàng
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <!-- Total price -->
+              <div class="panel">
+                <div class="row">
+                  <div class="col-12">
+                    <h5 class="mb-0 text-end" style="font-weight: 400;">Tổng giá: <span id="total-price">0</span><sup>đ</sup></h5>
+                  </div>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Toast success -->
+  <div class="position-fixed bottom-0 end-0 p-4" style="z-index: 11">
+    <div id="toastSuccess" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Thêm món ăn thành công!
+        </div>
+        <button type="button" class="btn-close btn-close-white me-3 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="assets/js/dd-store/dd-store.js"></script>
-  <script src="assets/js/dd-store/app.js"></script>
+  <script src="assets/js/dd-store/order.js"></script>
 </body>
 
 </html>

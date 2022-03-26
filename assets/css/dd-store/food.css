@@ -124,3 +124,7 @@
   color: var(--secondary-text);
   margin-bottom: 0;
 }
+
+.preview-img {
+  border-radius: var(--secondary-border-radius);
+}
