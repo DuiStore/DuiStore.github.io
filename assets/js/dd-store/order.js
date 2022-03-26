@@ -50,7 +50,7 @@ function getPrice() {
 
   let totalPrice = noodelePrice + sausagePrice + driedBeefPrice + eggPrice;
   $("#total-price").html(formatCurrency(totalPrice + ''));
-  $("#totalPrice").val(totalPrice);
+  $("#totalPrice").val(formatCurrency(totalPrice + ''));
 }
 
 function formatCurrency(total) {
