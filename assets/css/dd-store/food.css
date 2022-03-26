@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/* List online store =========================================================================*/
+
+.list-online-store .label-info:hover {
+  transform: scale(1.02, 1.02);
+}
+
+.list-online-store .label-info .flex {
+  justify-content: start;
+}
+
+.list-online-store .label-info .flex .icon-circle img {
+  width: 136px;
+  height: 136px;
+  transition: 0.4s;
+}
+
+.list-online-store .label-info .flex .content-body h4 {
+  font-size: 18px;
+}
+
+.list-online-store .label-info .flex .content-body .row-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-online-store .label-info .flex .content-body .row-info .star-rate i {
+  margin-right: 0;
+  color: #FFC107;
+  font-size: 12px;
+}
+
+.list-online-store .label-info .flex .content-body .panel-small {
+  padding: 6px 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: var(--secondary-background);
+  border-radius: var(--third-border-radius);
+  transition: 0.4s;
+}
+
+.list-online-store .label-info:hover .flex .content-body .panel-small {
+  background-color: var(--primary-button-background);
+}
+
+@media (max-width: 1200px) {
+  .list-online-store .label-info .flex .icon-circle img {
+    width: 120px;
+    height: 120px;
+  }
+  .list-online-store .label-info .flex .content-body .row-info .note {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .list-online-store .label-info .flex .icon-circle img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .list-online-store .label-info .flex .icon-circle img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .list-online-store .label-info .flex .icon-circle img {
+    width: 60px;
+    height: 60px;
+  }
+  .list-online-store .label-info {
+    padding: 8px 16px 2px;
+  }
+  .list-online-store .label-info .flex .icon-circle img {
+    margin-right: 12px;
+  }
+}
+
+
+/* List food */
+
+.list-food .label-info .flex {
+  justify-content: start;
+}
+
+.list-food .label-info .flex .content-body .food-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Food detail modal */
+
+#foodDetailModal .modal-body {
+  margin: 5px 0;
+}
+
+#foodDetailModal .modal-body .flex {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+#foodDetailModal .modal-body .flex .icon-circle img {
+  border-radius: var(--primary-border-radius);
+  margin-right: 20px;
+  width: 250px;
+}
+
+#foodDetailModal .modal-body .flex .content-body h3 {
+  font-size: 22px;
+  margin-bottom: 4px;
+  font-weight: var(--font-weight-4);
+}
+
+#foodDetailModal .modal-body .flex .content-body p {
+  font-size: 16px;
+  color: var(--secondary-text);
+  margin-bottom: 0;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tạp hoá Đinh Dúi - Đặt mỳ</title>
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="assets/css/all.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-icons.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/dd-store/main.css">
+  <link rel="stylesheet" href="assets/css/dd-store/common.css">
+  <link rel="stylesheet" href="assets/css/dd-store/grid.css">
+  <link rel="stylesheet" href="assets/css/dd-store/form.css">
+  <link rel="stylesheet" href="assets/css/dd-store/food.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand mr-auto" href="index.html">Tạp hoá Đinh Dúi</a>
+
+      <div class="navbar-btn-group">
+        <ul class="m-0 p-0">
+          <li class="navbar-btn btn-sidebar-menu">
+            <button id="btn-open-sidebar" class="navbar-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!-- Start: Sidebar -->
+      <div id="sidebar" class="sidebar">
+        <ul class="nav navbar-nav menu">
+          <li>
+            <div class="switch-theme">
+              <div>
+                <span class="label-theme"><i class="fas fa-moon fa-fw"></i>Chế độ tối</span>
+              </div>
+              <div class="btn-switch-theme">
+                <!-- <input class="form-check-input" type="checkbox" id="switch" /> -->
+                <input class="switch-button" type="checkbox" id="switch" />
+                <label for="switch"></label>
+              </div>
+            </div>
+          </li>
+          <li><a href="#"><i class="fas fa-home fa-fw"></i>Trang chủ</a></li>
+          <li><a href="#"><i class="far fa-comment fa-fw"></i>Thông tin liên hệ</a></li>
+        </ul>
+      </div>
+      <!-- End: Sidebar -->
+    </div>
+  </nav>
+
+  <div style="overflow: hidden;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="col-left">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="title fix-pd fix-mb-title">Menu</h1>
+              </div>
+            </div>
+            <ul class="nav navbar-nav sub-menu">
+              <li>
+                <a href="index.html">
+                  <i class="fas fa-list-ul fa-fw"></i>Danh sách sản phẩm
+                </a>
+              </li>
+              <li>
+                <a href="order-noodle.html">
+                  <i class="fas fa-utensils fa-fw"></i>Đặt mỳ
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-9 col-xl-9 col-xxl-9">
+          <div class="col-right">
+
+            <!-- Title -->
+            <div class="online-store">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="title fix-mb-title">Danh sách đồ ăn</h1>
+                </div>
+              </div>
+              <!-- List food -->
+              <div class="row" id="food">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/dd-store/dd-store.js"></script>
+  <script src="assets/js/dd-store/app.js"></script>
+</body>
+
+</html>
