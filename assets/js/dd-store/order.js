@@ -35,7 +35,7 @@ function getPrice() {
   let egg = $('[name="egg"]').val();
 
 
-  let noodelePrice = (noodele === "Hảo hảo") ? 6000 : 10000;
+  let noodelePrice = (noodele === "Hảo hảo") ? 5000 : 10000;
 
   let sausagePrice = (sausage === "Không") ? 0 :
     (sausage === "1 cái") ? 10000 :
