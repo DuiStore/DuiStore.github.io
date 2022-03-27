@@ -51,8 +51,9 @@
               </div>
             </div>
           </li>
-          <li><a href="#"><i class="fas fa-home fa-fw"></i>Trang chủ</a></li>
-          <li><a href="#"><i class="far fa-comment fa-fw"></i>Thông tin liên hệ</a></li>
+          <li><a href="index.html"><i class="fas fa-list-ul fa-fw"></i>Danh sách sản phẩm</a></li>
+          <li><a href="order-noodle.html"><i class="fas fa-utensils fa-fw"></i>Đặt mỳ</a></li>
+          <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#infoModal"><i class="far fa-comment fa-fw"></i>Thông tin liên hệ</a></li>
         </ul>
       </div>
       <!-- End: Sidebar -->
@@ -266,6 +267,31 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal confirm cancel Order -->
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="infoModalLabel">Thông tin liên hệ</h5>
+        </div>
+        <div class="modal-body">
+          <table>
+            <tr>
+              <td>–&nbsp; Số điện thoại</td>
+              <td class="ps-3">0913 040 796</td>
+            </tr>
+            <tr>
+              <td colspan="2">–&nbsp; Phòng 901 - Chung cư Phenikaa</td>
+            </tr>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</a>
         </div>
       </div>
     </div>
