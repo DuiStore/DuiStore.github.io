@@ -102,8 +102,8 @@
 @media (max-width: 576px) {
   .col-left,
   .col-right {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .container-fluid {
     padding-right: 16px;
