@@ -66,21 +66,26 @@ function openModal(modal) {
 function foodTemplate(object, type) {
   return `
   <div class="col-lg-12 col-xl-6 col-xxl-6">
-    <a href="javascript:void(0)" onclick="viewFoodDetail(${object.id}, ${type})" class="food label-info m-mb-16">
+    <div class="food label-info m-mb-16">
       <div class="flex-sb">
         <div class="flex">
           <div class="icon-circle">
             <img class="media-object" src="${object.image}" alt="">
           </div>
           <div class="content-body">
-            <h4>${object.name}</h4>
+            <a href="javascript:void(0)" onclick="viewFoodDetail(${object.id}, ${type})">${object.name}</a>
             <div class="food-info">
               <p>Giá: ${object.price}<sup>đ</sup>
             </div>
           </div>
         </div>
+        <div class="flex">
+          <a href="https://m.me/messages/t/100010226316967" class="btn-more mx-0" target="_blank">
+            <i class="fas fa-comment-dots text-success"></i>
+          </a>
+        </div>
       </div>
-    </a>
+    </div>
   </div>`;
 }
 

@@ -81,6 +81,18 @@
                   <i class="fas fa-utensils fa-fw"></i>Đặt mỳ
                 </a>
               </li>
+              <li>
+                <table class="mt-4">
+                  <tr>
+                    <td class="py-1">&nbsp;&nbsp; Số điện thoại:</td>
+                    <td class="ps-2">0913 040 796</td>
+                  </tr>
+                  <tr>
+                    <td class="py-1">&nbsp;&nbsp; Số điện thoại:</td>
+                    <td class="ps-2">0862 869 670</td>
+                  </tr>
+                </table>
+              </li>
             </ul>
           </div>
         </div>
@@ -95,8 +107,9 @@
                 </div>
               </div>
               <!-- List food -->
-              <div class="row" id="food">
-              </div>
+              <div class="row" id="food"></div>
+              <div class="form-text mt-0">– Cửa hàng không ship đồ, khách hàng vui lòng đến mua tại nơi theo địa chỉ: Phòng 901 - Chung cư Phenikaa.</div>
+              <div class="form-text mt-0">– Đối với các sản phần cần chế biến, khách hàng vui lòng liên hệ đặt hàng trước qua số điện thoại hoặc nhắn tin facebook để của hàng chuẩn bị.</div>
 
               <!-- Title -->
               <div class="row">
@@ -108,9 +121,7 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="list-food">
-                    <div class="row" id="drink">
-
-                    </div>
+                    <div class="row" id="drink"></div>
                   </div>
                 </div>
               </div>
@@ -161,6 +172,38 @@
       </div>
     </div>
   </div>
+
+  <!-- Messenger Plugin chat Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Plugin chat code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "987745294721487");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml: true,
+        version: 'v13.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="assets/js/dd-store/dd-store.js"></script>

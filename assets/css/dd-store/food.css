@@ -128,3 +128,14 @@
 .preview-img {
   border-radius: var(--secondary-border-radius);
 }
+
+
+/* Online store manage food =========================================================================*/
+
+.label-info:hover .btn-more {
+  background-color: var(--icon-button-background);
+}
+
+.preview-img {
+  border-radius: var(--secondary-border-radius);
+}
