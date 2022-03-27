@@ -9,13 +9,13 @@
     "name": "Cô ca lon 250ml",
     "price": "10.000",
     "image": "assets/images/drink/coca-lon-250ml.jpg"
-  }
+  },
   {
     "id": 3,
     "name": "Nước chanh leo",
     "price": "10.000",
     "image": "assets/images/drink/Nuoc-chanh-leo.jpg"
-  }
+  },
   {
     "id": 4,
     "name": "Nước sấu",
