@@ -1,55 +1,55 @@
 [{
     "id": 1,
     "name": "Xúc xích CP Rán",
-    "price": "10.000",
+    "price": "10.000<sup>đ</sup> / cái",
     "image": "assets/images/food/xuc-xich-chien.jpg"
   },
   {
     "id": 2,
     "name": "Tôm định hình surimi chiên",
-    "price": "10.000",
+    "price": "10.000<sup>đ</sup> / xiên",
     "image": "assets/images/food/Tom-surimi.png"
   },
   {
     "id": 3,
     "name": "Rau củ quả viên chiên",
-    "price": "10.000",
+    "price": "10.000<sup>đ</sup> / xiên",
     "image": "assets/images/food/rau-cu-vien-chien.png"
   },
   {
     "id": 4,
     "name": "Cơm cháy chiên nước mắm",
-    "price": "10.000",
+    "price": "10.000<sup>đ</sup> / gói",
     "image": "assets/images/food/com-chay.png"
   },
   {
     "id": 5,
     "name": "Snack mix smoked bacon",
-    "price": "12.000",
+    "price": "15.000<sup>đ</sup> / gói",
     "image": "assets/images/food/snack-mix.jpg"
   },
   {
     "id": 6,
     "name": "Khay mix hoa quả theo mùa",
-    "price": "20.000",
+    "price": "20.000<sup>đ</sup> / khay",
     "image": "assets/images/food/khay-thap-cam-1.jpg"
   },
   {
     "id": 7,
     "name": "Dưa chuột",
-    "price": "10.000",
+    "price": "10.000<sup>đ</sup> / khay",
     "image": "assets/images/food/dua-chuot.jpg"
   },
   {
     "id": 8,
     "name": "Khay Xoài",
-    "price": "20.000",
+    "price": "20.000<sup>đ</sup> / khay",
     "image": "assets/images/food/khay-thap-cam-1.jpg"
   },
   {
     "id": 9,
     "name": "Khay cóc",
-    "price": "20.000",
+    "price": "20.000<sup>đ</sup> / khay",
     "image": "assets/images/food/khay-thap-cam-1.jpg"
   }
 ]

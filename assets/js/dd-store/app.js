@@ -75,7 +75,7 @@ function foodTemplate(object, type) {
           <div class="content-body">
             <h4>${object.name}</h4>
             <div class="food-info">
-              <p>Giá: ${object.price}<sup>đ</sup>
+              <p>Giá: ${object.price}
             </div>
           </div>
         </div>
